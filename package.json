@@ -1,0 +1,23 @@
+{
+  "name": "tft-bot",
+  "version": "1.0.0",
+  "description": "discord bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlFalahTaieb/TFT-Bot.git"
+  },
+  "author": "taieb",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlFalahTaieb/TFT-Bot/issues"
+  },
+  "homepage": "https://github.com/AlFalahTaieb/TFT-Bot#readme",
+  "dependencies": {
+    "discord.js": "^12.0.2",
+    "dotenv": "^8.2.0"
+  }
+}
