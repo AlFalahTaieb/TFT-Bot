@@ -91,7 +91,7 @@ bot.on('message', async msg => {
   }
   wishList.test(msg.content)
 
-  if (msg.content === '!blindpick') {
+  if (msg.content === '!blindpick' && (msg.channel.id === '693591361730904166' || msg.channel.id === '693757637174624297')) {
 
     let embed = new Discord.MessageEmbed()
       .setThumbnail(getRandoMovie.Poster)
@@ -116,7 +116,7 @@ bot.on('message', async msg => {
     msg.reply(embed)
     // msg.reply(`TO DOWNLOAD FOLLOW THIS LINK: ${ytsLink}`)
   }
-  else if (msg.content == myWord) {
+  else if (msg.content == myWord && (msg.channel.id === '693591361730904166' || msg.channel.id==='693757637174624297'))  {
     // var matchWord = msg.content.match(wishList)
     // // console.log(a.test(myString))
     // let user = matchWord[0].substring(10).trim()
@@ -164,7 +164,7 @@ bot.on('message', async msg => {
     // let userWatchlist = `https://letterboxd.com/${user}/watchlist/`
     msg.reply(embedwatchList)
   }
-  else if (checkifExist(movieDetail, msg.content)) {
+  else if (checkifExist(movieDetail, msg.content) && (msg.channel.id === '693591361730904166' || msg.channel.id==='693757637174624297')) {
     console.log(getTheText(movieDetail, msg.content))
     let movie = getTheText(movieDetail, msg.content)
     let letterboxFormatedURl = 'https://letterboxd.com/film/' + movie
@@ -194,7 +194,8 @@ bot.on('message', async msg => {
     msg.reply(embed)
     // console.log('HEEEEEEEEEEEY')
 
-  } else if (msg.content == '!Coppola') {
+  } else if (msg.content == '!Coppola' && (msg.channel.id === '693591361730904166' || msg.channel.id==='693757637174624297')) {
+    console.log(msg.channel.id)
     let Messages=[
       'I think cinema, movies, and magic have always been closely associated. The very earliest people who made film were magicians.',
       'I was always the black sheep of the family and always told that I was dumb, and I had a low IQ and did badly in school.',
@@ -225,7 +226,7 @@ bot.on('message', async msg => {
    let CopolaMessage= Messages[Math.floor(Math.random() * Messages.length)]
    msg.reply(CopolaMessage)
   }
-  else if(msg.content =='!help'){
+  else if(msg.content =='!help' && (msg.channel.id === '693591361730904166' || msg.channel.id==='693757637174624297')){
     message = 'Oyez, oyez, braves gens, damoiselles et damoiseaux! Je suis votre modeste sérviteur: vous pouvez faire appel à moi grace à ces commandes : `!watchlist` pour voir la watchlist de tous les membres vous pouvez aussi faire !`blindpick` laissez le hasard choisir un film pour vous et si vous voulez des détails concernant un film faites !`moviedetail NOMDUFILM` et !`Coppola`'
   msg.reply(message)
   }
@@ -234,3 +235,5 @@ bot.on('message', async msg => {
 // bot.on("warn", (e) => console.warn(e))
 // bot.on("debug", (e) => console.info(e))
 // console.log(chan)
+693168463346270222
+693591361730904166
