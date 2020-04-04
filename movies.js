@@ -71,7 +71,6 @@ const MOVIES =
         "Rhino Season",
         "Hesher",
         "The Boat That Rocked",
-        "Das Boot",
         "The Amityville Horror",
         "Parasite",
         "Fargo",
