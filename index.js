@@ -26,7 +26,8 @@ getUser = async (randomMovie, letterboxUrl) => {
       Awards: body.data.Awards || '',
       Actors: body.data.Actors,
       Poster: body.data.Poster,
-      Link: letterboxUrl
+      Link: letterboxUrl,
+      Genre: body.data.Genre
     }
 
   } catch (error) {
@@ -101,6 +102,7 @@ bot.on('message', async msg => {
       .addField("Year: ", getRandoMovie.Year, true)
       .addField("Director: ", getRandoMovie.Director, true)
       .addField("Runtime: ", getRandoMovie.Runtime, true)
+      .addField("Genre: ", getRandoMovie.Genre, true)
       .addField("Rated: ", getRandoMovie.Rated, true)
       .addField("Actors: ", getRandoMovie.Actors, true)
       .addField('Torrent Link: ', ytsLink)
@@ -235,5 +237,3 @@ bot.on('message', async msg => {
 // bot.on("warn", (e) => console.warn(e))
 // bot.on("debug", (e) => console.info(e))
 // console.log(chan)
-693168463346270222
-693591361730904166
