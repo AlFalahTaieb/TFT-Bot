@@ -1,5 +1,5 @@
 const MOVIES =
-["Stand by Me", "3-Iron", "The Sandlot", "Nobody Knows", "The Passenger", "Good Times", "Tampopo", "Never rarely sometimes always ", "Riding in cars with boys","Vertigo","Straw Dogs"," On the Waterfront","The Apartment","Werckmeister harmóniák"]
+["3-Iron", "The Sandlot", "The Passenger", "Tampopo","Vertigo","Straw Dogs"," On the Waterfront","Peppermint Candy","Angel's Egg","Sorry to bother you","Mistress America","Burning","Skate Kitchen","The Sacrifice"]
 
 
 exports.movies = MOVIES
